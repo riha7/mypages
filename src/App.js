@@ -1,4 +1,5 @@
 import './App.css';
+import Getdata from './Getdata';
 import GitPageBasic from './GitPageBasic';
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
         </ul>
 
     <GitPageBasic />
+    <Getdata />
       </header>
     </div>
   );

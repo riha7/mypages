@@ -24,7 +24,6 @@ const GitPageBasic = () => {
                 <input type="text" name="pwd" value={pwd} onChange={handleInput} />
                 <button>Click</button>
             </form>
-            <Getdata />
         </div>
     )
 }
