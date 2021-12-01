@@ -7,6 +7,11 @@ function App() {
       <header className="App-header">
         <h1>Main Page</h1>
         <h3 style={{color:'tomato'}}>Login page ready to create</h3>
+        <ul>
+          <li>idly</li>
+          <li>sambar</li>
+          <li>wada</li>
+        </ul>
 
     <GitPageBasic />
       </header>
