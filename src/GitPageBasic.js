@@ -1,34 +1,28 @@
-import React from 'react'
+import React,{useState} from 'react'
 
 const GitPageBasic = () => {
+    const [state, setstate] = useState({
+        username:'',
+        pwd:''
+    })
+    const {username,pwd} = state;
+    const handleInput=(e)=>{
+            let newdata = {...state}
+            newdata[e.target.name] = e.target.value
+            setstate(newdata)
+    }
+    const handleSubmit=(e)=>{
+        e.preventDefault()
+        console.log(newdata)
+        console.log(JSON.stringify(state))
+    }
     return (
         <div>
-            <div style={{display:'flex',flexDirection:'row',justifyContent:'space-around',border:'2px solid tomato',alignItems:'center'}}>
-            <h1>git page basic</h1>
-            <p>i am in git project</p>
-            <table className="table">
-                <thead>
-                    <tr>
-                        <th>s.no</th>
-                        <th>name</th>
-                        <th>item</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td>hari</td>
-                        <td>idily</td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>wada</td>
-                        <td>riha</td>
-                    </tr>
-                </tbody>
-            </table>
-            </div>
-
+            <form onSubmit={handleSubmit}>
+                <input type="text" name="username" value={username} onChange={handleInput} /> <br />
+                <input type="text" name="pwd" value={pwd} onChange={handleInput} />
+                <button>Click</button>
+            </form>
         </div>
     )
 }
