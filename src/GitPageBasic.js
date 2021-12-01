@@ -25,7 +25,7 @@ const GitPageBasic = () => {
                 <button>Click</button>
             </form>
             <div>
-              {document.write(JSON.stringify(newdaata))}
+              {document.write(JSON.stringify(state))}
             </div>
             
         </div>
