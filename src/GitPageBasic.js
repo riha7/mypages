@@ -19,13 +19,13 @@ const GitPageBasic = () => {
     }
     return (
         <div>
-            <form onSubmit={handleSubmit} autoComplete='off'>
+            <form onSubmit={handleSubmit}>
                 <input type="text" name="username" value={username} onChange={handleInput} /> <br />
                 <input type="text" name="pwd" value={pwd} onChange={handleInput} />
                 <button>Click</button>
             </form>
             <div>
-              {JSON.stringify(state)}
+              {document.write(JSON.stringify(newdaata))}
             </div>
             
         </div>
