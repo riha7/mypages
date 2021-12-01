@@ -1,5 +1,5 @@
 import React,{useState} from 'react'
-import Getdata from './Getdata';
+import GetdataWithoutcancellingApi from './GetdataWithoutcancellingApi';
 
 const GitPageBasic = () => {
     const [state, setstate] = useState({
@@ -24,6 +24,7 @@ const GitPageBasic = () => {
                 <input type="text" name="pwd" value={pwd} onChange={handleInput} />
                 <button>Click</button>
             </form>
+            <GetdataWithoutcancellingApi />
         </div>
     )
 }
