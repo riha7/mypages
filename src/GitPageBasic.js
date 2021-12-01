@@ -13,8 +13,8 @@ const GitPageBasic = () => {
     }
     const handleSubmit=(e)=>{
         e.preventDefault()
+        let newdata={'username':username,'pwd':pwd}
         console.log(newdata)
-        console.log(JSON.stringify(state))
     }
     return (
         <div>
