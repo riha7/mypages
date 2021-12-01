@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import GitPageBasic from './GitPageBasic';
 
 function App() {
   return (
@@ -17,7 +18,7 @@ function App() {
         >
           Learn React
         </a>
-
+    <GitPageBasic />
       </header>
     </div>
   );
