@@ -3,8 +3,7 @@ import React from 'react'
 const DataApintigration = () => {
     return (
         <div>
-            <h1>API intigration start.......</h1>
-            <h2>Api calls now....</h2>
+            <h1 style={{background:'green',color:'white'}}>API intigration start.......</h1>
         </div>
     )
 }
