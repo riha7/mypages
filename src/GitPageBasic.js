@@ -19,7 +19,7 @@ const GitPageBasic = () => {
     }
     return (
         <div>
-            <form onSubmit={handleSubmit}>
+            <form onSubmit={handleSubmit} autoComplete='off'>
                 <input type="text" name="username" value={username} onChange={handleInput} /> <br />
                 <input type="text" name="pwd" value={pwd} onChange={handleInput} />
                 <button>Click</button>
