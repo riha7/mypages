@@ -1,4 +1,5 @@
 import React,{useState} from 'react'
+import Getdata from './Getdata';
 
 const GitPageBasic = () => {
     const [state, setstate] = useState({
@@ -23,6 +24,7 @@ const GitPageBasic = () => {
                 <input type="text" name="pwd" value={pwd} onChange={handleInput} />
                 <button>Click</button>
             </form>
+            <Getdata />
         </div>
     )
 }
