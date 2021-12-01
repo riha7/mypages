@@ -1,5 +1,6 @@
 import './App.css';
 import Getdata from './Getdata';
+import GetdataWithoutcancellingApi from './GetdataWithoutcancellingApi';
 import GitPageBasic from './GitPageBasic';
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
 
     <GitPageBasic />
     <Getdata />
+    <GetdataWithoutcancellingApi />
       </header>
     </div>
   );
