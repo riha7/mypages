@@ -1,4 +1,5 @@
 import './App.css';
+import DataApintigration from './DataApintigration';
 import Get from './Get';
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
         <h2>Getdata added</h2>
         <h2 style={{color:'orangered'}}>Registration page Created</h2>
       <Get />
+      <DataApintigration />
       </header>
     </div>
   );
