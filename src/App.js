@@ -2,6 +2,7 @@ import './App.css';
 import DataApintigration from './DataApintigration';
 import DisplayBrowser from './DisplayBrowser';
 import Get from './Get';
+import SetTimeoutWithoutCancellngAPI from './SetTimeoutWithoutCancellngAPI';
 function App() {
   return (
     <div className="App">
@@ -14,6 +15,7 @@ function App() {
       <Get />
       <DataApintigration />
       <DisplayBrowser />
+      <SetTimeoutWithoutCancellngAPI />
       </header>
     </div>
   );

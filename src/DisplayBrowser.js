@@ -42,7 +42,6 @@ const DisplayBrowser = () => {
                            )
                        })
                    }
-
                </tbody>
            </table> 
         </div>
