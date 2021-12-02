@@ -18,7 +18,7 @@ const SetTimeoutWithoutCancellngAPI = () => {
             const makerequest= async()=>{
                 try {
                     const result=await axios({
-                        urll:"https://jsonplaceholder.typicode.com/users",
+                        urll:"https://jsonplaceholder.typicode.com/todos/1",
                         headers:{
                             accept:"application/json",
                             "content-type":"application/json"
@@ -35,7 +35,7 @@ const SetTimeoutWithoutCancellngAPI = () => {
             } catch (error) {
                 handleError(error)
             }
-    }
+    };
     return (
         <div>
             <h3>How to set a TimedOut using axios without cancelling api call.</h3>
