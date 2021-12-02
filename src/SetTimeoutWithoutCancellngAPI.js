@@ -30,7 +30,7 @@ const SetTimeoutWithoutCancellngAPI = () => {
                     return handleError(error);
                 }    
             };
-            const timer = new Promise((_, reject) => setTimeout(reject, waitTime, {timedout: "request taking a long time"}));
+            const timer = new Promise((_, reject) => setTimeout(reject, waittime, {timedout: "request taking a long time"}));
             try {
                 await Promise.race([makeRequest(), timer]);
             } catch(error) {
