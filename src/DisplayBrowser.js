@@ -3,7 +3,7 @@ import React, { useState,useEffect } from 'react'
 //https://jsonplaceholder.typicode.com/users
 const DisplayBrowser = () => {
     const [data, setdata] = useState([])
-    useEffect(() => {
+    const  handleData=()=>{
         axios({
             url:'https://jsonplaceholder.typicode.com/users',
             headers:{
@@ -14,10 +14,14 @@ const DisplayBrowser = () => {
             console.log(res);
             setdata(res.data);
         })
+    }
+    useEffect(() => {
+            handleData()
     }, [])
     return (
         <div>
            <h2>Display Data to Browser</h2>
+           <button onClick={()=>handleData()}>Click to show data</button>
            <table className="table">
                <thead>
                    <tr>
