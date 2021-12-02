@@ -1,5 +1,6 @@
 import './App.css';
 import DataApintigration from './DataApintigration';
+import DisplayBrowser from './DisplayBrowser';
 import Get from './Get';
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <h2 style={{color:'orangered'}}>Registration page Created</h2>
       <Get />
       <DataApintigration />
+      <DisplayBrowser />
       </header>
     </div>
   );
