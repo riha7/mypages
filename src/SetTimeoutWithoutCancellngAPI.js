@@ -2,6 +2,7 @@ import axios from 'axios'
 import React from 'react'
 
 const SetTimeoutWithoutCancellngAPI = () => {
+    const waittime=5000;
     const withoutCancellingAPI=async()=>{
             const handleError=error=>{
                     if(!error.handled){
@@ -23,16 +24,16 @@ const SetTimeoutWithoutCancellngAPI = () => {
                             "content-type":"application/json"
                         }
                     });
-                    console.log("Success!",JSON.stringify(result.data));
+                    console.log("Success!",JSON.stringify(result.data,null,2));
                 } catch (error) {
                     handleError(error)
                 }
-                const timer=new Promise((_,reject)=>setTimeout(reject,5000,{timedout:'request taking long time'}));
-                try {
-                    await Promise.race([makerequest(),timer])
-                } catch (error) {
-                    handleError(error)
-                }
+            }
+            const timer=new Promise((_,reject)=>setTimeout(reject,waittime,{timedout:'request taking long time'}));
+            try {
+                await Promise.race([makerequest(),timer])
+            } catch (error) {
+                handleError(error)
             }
     }
     return (
