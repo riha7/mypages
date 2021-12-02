@@ -11,7 +11,7 @@ const DisplayBrowser = () => {
                 "content-type":"application/json"
             }
         }).then(res=>{
-            console.log(res.data);
+            console.log(res);
             setdata(res.data);
         })
     }, [])
